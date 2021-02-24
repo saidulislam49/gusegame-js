@@ -10,11 +10,19 @@
     <link rel="stylesheet" href="style.css">
 
     <style>
+        body{
+            background: #393e46;
+        }
         #greatingFalse{
             visibility: hidden;
         }
         #greatingTrue{
             visibility: hidden;
+        }
+        .col-6{
+            padding: 0;
+            padding-left: 5px;
+            padding-right: 5px;
         }
     </style>
 
@@ -25,33 +33,33 @@
     <audio id="lose" src="audio/lose2.mp3" ></audio>
 
     <div class="container_full d-flex justify-content-center">
-        <div class="col-4 mt-5">
+        <div class="col-4 mt-5 bg-secondary shadow p-4 rounded">
              <div class="row">
                  <div class="col-6">
                      <input type="text" class="form-control" id="myInputFiled">
                 </div>
                  <div class="col-6">
-                     <button class="btn btn-secondary w-100" onclick="myNumber()">Submit</button>
+                     <button class="btn btn-success w-100 shadow" onclick="myNumber()">Submit</button>
                 </div>
              </div>
 
              <div class="row">
                    <div class="col-6">
-                    <div class="alert alert-dark my-3 text-center" id="customNumber"></div>
+                    <div class="alert alert-dark my-3 text-center shadow" id="customNumber"></div>
                    </div>
                    <div class="col-6">
-                    <div class="alert alert-dark my-3 text-center" id="defaultNumber"> </div>
+                    <div class="alert alert-dark my-3 text-center shadow" id="defaultNumber"> </div>
                    </div>
              </div>
 
              <div class="row">
-                   <div class="alert alert-danger my-3 text-center" id="greatingFalse">You lose the game</div>
-                   <div class="alert alert-primary my-3 text-center" id="greatingTrue">You win the game</div>
+                   <div class="alert alert-danger my-3 text-center shadow-lg" id="greatingFalse">You lose the game</div>
+                   <div class="alert alert-primary my-3 text-center shadow-lg" id="greatingTrue">You win the game</div>
              </div>
 
              <div class="row"> 
                 <div class="col-6 m-auto">
-                    <button disabled class="btn btn-primary w-100 " onclick="randomNum()" id="playButton">PLAY NOW</button>
+                    <button disabled class="btn btn-primary w-100 shadow" onclick="randomNum()" id="playButton">PLAY NOW</button>
                 </div>
             </div>
 
